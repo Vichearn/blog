@@ -13,7 +13,7 @@
 use Illuminate\Http\Request;
 
 Route::get('/', function () {
-    return view('Layouts/master');
+    return view('Home/home');
 });
 
 Route::resource('products', 'ProductsController');
