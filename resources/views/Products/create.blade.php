@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
 @extends('layouts.master')
 
 @section('title')
 
 @section('content')
 
-<div class="container">
 
 <nav class="navbar navbar-inverse">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="{{ URL::to('products') }}">Product Alert</a>
-    </div>
     <ul class="nav navbar-nav">
         <li><a href="{{ URL::to('products') }}">View All Products</a></li>
-        <li><a href="{{ URL::to('products/create') }}">Create a Product</a>
     </ul>
 </nav>
 
@@ -49,6 +41,5 @@
     {{ Form::submit('Create the Product!', array('class' => 'btn btn-primary')) }}
 
 {{ Form::close() }}
-</div>
 
 @stop
